@@ -1,0 +1,98 @@
+  .dashboard {
+    display: flex;
+    height: 100vh;
+    width: 100%;  
+    background-color: black;
+    color : white;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 20%;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links .active {
+    background: #333;
+    border-radius: 5px;
+  }
+
+  .main-content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .header-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stat {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .analytics-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .yellow {
+    background: #facc15;
+  }
+
+  .cyan {
+    background: #06b6d4;
+  }
+
+  .white {
+    background: white;
+    color: black;
+  }
+
+  .pink {
+    background: #ec4899;
+  }
+
+  .tournament {
+    background: #222;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
