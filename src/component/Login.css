@@ -193,6 +193,28 @@
 .login .glass-button span {
     z-index: 1;
     position: relative;
+    color: rgb(0, 0, 0);
+    /* text-shadow:
+    0 0 5px #00cfff,
+    0 0 10px #00cfff,
+    0 0 20px #00ffff,
+    0 0 40px #8a2be2,
+    0 0 80px #8a2be2,
+    0 0 100px #8a2be2;*/
+    font-family: "cursive"; 
+}
+
+.login .glass-button span .wait{
+    font-size: 40%;
+    font-weight: 800;
+    color: rgb(246, 255, 0);
+    text-shadow:
+    0 0 5px #00cfff,
+    0 0 10px #00cfff,
+    0 0 20px #00ffff,
+    0 0 40px #8a2be2,
+    0 0 80px #8a2be2,
+    0 0 100px #8a2be2;
 }
 
 .login .glass-button:active {

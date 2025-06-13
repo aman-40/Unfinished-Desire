@@ -48,9 +48,11 @@ const Login = () => {
                                     Female
                                 </label>
                             </div>
-                                <input type="text" className="glass-input" placeholder="Write your name you want..." />
+                                <input type="text" className="glass-input" placeholder="Write your desire name..." />
                                 <button className="glass-button">
-                                    <span>Start</span>
+                                    <span>Start <br />
+                                    <p className="wait">I can't wait</p>
+                                    </span>
                                 </button>
                             </div>
                         </div>
