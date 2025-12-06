@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 
-const Login = () => {
+const Login = ({ onStart }) => {
     const [activeTab, setActiveTab] = useState("home");
 
     const handleTabClick = (tab) => {
@@ -49,7 +49,10 @@ const Login = () => {
                                 </label>
                             </div>
                                 <input type="text" className="glass-input" placeholder="Write your desire name..." />
-                                <button className="glass-button">
+                                <button
+                                    className="glass-button"
+                                    onClick={() => { if (onStart) onStart(); }}
+                                >
                                     <span>Start <br />
                                     <p className="wait">I can't wait</p>
                                     </span>

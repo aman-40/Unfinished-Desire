@@ -1,0 +1,2 @@
+.welcome-chat{ display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; color:#fff}
+.welcome-chat h2{ font-family: 'Yesteryear', cursive; font-size:3rem}

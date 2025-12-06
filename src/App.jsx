@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Dashboard from './component/Dashboard'
 import Under from './component/Under'
 import Login from './component/Login'
+import ChatLayout from './pages/ChatLayout'
 
 function App() {
-  return (
-    <>
-    {/* <Under/> */}
-    <Login/>
-    {/* <Dashboard/> */}
-    </>
-  )
+  const [started, setStarted] = useState(false);
+
+  if (!started) return <Login onStart={() => setStarted(true)} />
+
+  return <ChatLayout />
 }
 
 export default App

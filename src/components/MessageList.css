@@ -1,0 +1,7 @@
+.message-list-root{flex:1;overflow:auto;padding:1.5rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.05));}
+.messages-inner{display:flex;flex-direction:column;gap:1rem}
+.message-bubble{max-width:70%;padding:.8rem 1rem;border-radius:14px;position:relative}
+.message-bubble.in{align-self:flex-start;background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.03)}
+.message-bubble.out{align-self:flex-end;background:linear-gradient(90deg,#00cfff,#7b2ff7);color:#000}
+.message-text{font-size:1rem}
+.message-time{font-size:.7rem;color:rgba(255,255,255,0.6);margin-top:.25rem;text-align:right}

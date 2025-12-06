@@ -1,0 +1,4 @@
+.avatar-root{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;background:rgba(255,255,255,0.03);border-radius:8px;border:2px solid rgba(255,255,255,0.06)}
+.avatar-root img{width:100%;height:100%;object-fit:cover}
+.avatar-root.online{box-shadow:0 0 10px #00cfff, 0 0 18px rgba(123,47,247,0.6)}
+.initials{color:white;font-weight:800}
