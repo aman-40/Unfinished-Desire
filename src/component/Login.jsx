@@ -3,6 +3,8 @@ import "./Login.css";
 
 const Login = ({ onStart }) => {
     const [activeTab, setActiveTab] = useState("home");
+    const [desireName, setDesireName] = useState("");
+    const [gender, setGender] = useState("");
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
@@ -40,18 +42,24 @@ const Login = ({ onStart }) => {
                             <div className="form-group">
                                 <div className="gender-selection">
                                 <label>
-                                    <input type="radio" name="gender" value="male" />
+                                    <input type="radio" name="gender" value="male" onChange={(e) => setGender(e.target.value)} checked={gender === 'male'} />
                                     Male
                                 </label>
                                 <label>
-                                    <input type="radio" name="gender" value="female" />
+                                    <input type="radio" name="gender" value="female" onChange={(e) => setGender(e.target.value)} checked={gender === 'female'} />
                                     Female
                                 </label>
                             </div>
-                                <input type="text" className="glass-input" placeholder="Write your desire name..." />
+                                <input 
+                                    type="text" 
+                                    className="glass-input" 
+                                    placeholder="Write your desire name..." 
+                                    value={desireName}
+                                    onChange={(e) => setDesireName(e.target.value)}
+                                />
                                 <button
                                     className="glass-button"
-                                    onClick={() => { if (onStart) onStart(); }}
+                                    onClick={() => { if (onStart) onStart({ name: desireName, gender }); }}
                                 >
                                     <span>Start <br />
                                     <p className="wait">I can't wait</p>

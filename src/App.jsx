@@ -5,11 +5,11 @@ import Login from './component/Login'
 import ChatLayout from './pages/ChatLayout'
 
 function App() {
-  const [started, setStarted] = useState(false);
+  const [user, setUser] = useState(null);
 
-  if (!started) return <Login onStart={() => setStarted(true)} />
+  if (!user) return <Login onStart={(userData) => setUser(userData)} />
 
-  return <ChatLayout />
+  return <ChatLayout user={user} />
 }
 
 export default App

@@ -5,3 +5,5 @@
 .message-bubble.out{align-self:flex-end;background:linear-gradient(90deg,#00cfff,#7b2ff7);color:#000}
 .message-text{font-size:1rem}
 .message-time{font-size:.7rem;color:rgba(255,255,255,0.6);margin-top:.25rem;text-align:right}
+.message-system{align-self:center;background:rgba(255,255,255,0.1);padding:0.5rem 1rem;border-radius:20px;font-size:0.8rem;color:#b9f2ff;text-align:center;box-shadow: 0 0 10px rgba(0,255,255,0.2);}
+.message-sender{font-size:0.75rem;color:#00cfff;margin-bottom:0.25rem;font-weight:bold;}

@@ -3,11 +3,19 @@ import '../component/Login.css';
 import './ContactList.css';
 import Avatar from './Avatar';
 
-export default function ContactList({ conversations, selectedId, onSelect }) {
+export default function ContactList({ conversations, selectedId, onSelect, onFindStranger, isFindingStranger }) {
   return (
     <div className="contacts-root">
       <div className="contacts-header">
         <h3>Chats</h3>
+        <button 
+          className="glass-button" 
+          onClick={onFindStranger}
+          disabled={isFindingStranger}
+          style={{ padding: '0.5rem 1rem', fontSize: '1rem', width: '100%', marginBottom: '1rem' }}
+        >
+          <span>{isFindingStranger ? "Finding..." : "Find Stranger"}</span>
+        </button>
         <input className="glass-input" placeholder="Search..." />
       </div>
       <div className="contacts-list">
